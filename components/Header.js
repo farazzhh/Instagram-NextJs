@@ -11,8 +11,9 @@ import { HomeIcon } from "@heroicons/react/solid";
 
 const Header = () => {
   return (
-    <div className="shadow-sm border-b z-50 bg-white sticky top-0 ">
+    <div className="shadow-sm border z-50 bg-white sticky top-0 ">
       <div className="flex justify-between max-w-6xl m-5 lg:mx-auto">
+
         {/* left */}
         <div className="relative hidden lg:inline-grid w-24">
           <Image
@@ -46,7 +47,7 @@ const Header = () => {
 
         {/* Right */}
         <div className="flex items-center justify-end space-x-4">
-          <MenuIcon className="h-10 md:hidden cursor-pointer" />
+          <MenuIcon className="h-7 md:hidden cursor-pointer" />
           <HomeIcon className="navBtn" />
           <div className="relative navBtn">
             <PaperAirplaneIcon className="navBtn rotate-45" />
@@ -60,7 +61,7 @@ const Header = () => {
           <img
             src="./logo.png"
             alt="profile pic"
-            className="rounded-full h-10 bg-green-600"
+            className="rounded-full h-10 bg-blue-50 p-[1px]"
           />
         </div>
       </div>

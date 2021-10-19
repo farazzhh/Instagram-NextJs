@@ -8,15 +8,15 @@ import {
 } from "@heroicons/react/outline";
 import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid";
 
-const Post = ({ username, img, caption }) => {
+const Post = ({ username, img,userImg, caption }) => {
   return (
-    <div className="bg-white my-7 border rounded-sm">
+    <div className="bg-white  border rounded-sm">
       {/* Header */}
       <div className="flex items-center p-5">
         <img
-          src={img}
+          src={userImg}
           alt="user profile"
-          className="h-12 w-12 object-contain"
+          className="h-12 w-12 object-cover mr-1 bg-blue-50 p-[1px] rounded-full"
         />
         <p className="flex-1 font-bold">{username}</p>
         <DotsHorizontalIcon className="w-5" />
